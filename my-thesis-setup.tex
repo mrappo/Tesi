@@ -1,0 +1,80 @@
+% !TEX root = my-thesis.tex
+
+
+% **************************************************
+% Files' Character Encoding
+% **************************************************
+\PassOptionsToPackage{utf8}{inputenc}
+\usepackage{inputenc}
+
+
+% **************************************************
+% Information and Commands for Reuse
+% **************************************************
+\newcommand{\thesisTitle}{Il bosone di Higgs}
+\newcommand{\thesisName}{Paolo Rossi}
+\newcommand{\thesisSubject}{Tesi di Laurea Magistrale in Fisica}
+\newcommand{\thesisDate}{30 settembre 2012}
+\newcommand{\thesisVersion}{My First Draft}
+
+\newcommand{\thesisFirstReviewer}{Rosso}
+\newcommand{\thesisFirstReviewerUniversity}{\protect{Universit\`a degli studi di Milano-Biocca}}
+\newcommand{\thesisFirstReviewerDepartment}{Dipartimento di Fisica G.Occhialini}
+
+\newcommand{\thesisSecondReviewer}{Giallo}
+\newcommand{\thesisSecondReviewerUniversity}{\protect{Universit\`a degli studi di Milano-Biocca}}
+\newcommand{\thesisSecondReviewerDepartment}{Dipartimento di Fisica G.Occhialini}
+
+\newcommand{\thesisFirstSupervisor}{Arancione}
+\newcommand{\thesisSecondSupervisor}{John Smith}
+
+\newcommand{\thesisUniversity}{\protect{Universit\`a degli studi di Milano-Biocca}}
+\newcommand{\thesisUniversityDepartment}{Dipartimento di Fisica G. Occhialini}
+\newcommand{\thesisUniversityInstitute}{pp}
+\newcommand{\thesisUniversityGroup}{pp}
+\newcommand{\thesisUniversityCity}{Milano}
+\newcommand{\thesisUniversityStreetAddress}{Piazza della Scienza 3}
+\newcommand{\thesisUniversityPostalCode}{20126}
+
+\newcommand{\thesisUniversityFaculty}{Facolt\`a di Scienze MAtematiche, Fisiche e Naturali}
+
+\newcommand{\thesisYear}{2015-2016}
+\newcommand{\thesisSession}{1 settembre 2012}
+
+
+% **************************************************
+% Debug LaTeX Information
+% **************************************************
+%\listfiles
+
+
+% **************************************************
+% Load and Configure Packages
+% **************************************************
+\usepackage[english]{babel} % babel system, adjust the language of the content
+\PassOptionsToPackage{% setup clean thesis style
+    figuresep=colon,%
+    sansserif=true,%
+    hangfigurecaption=false,%
+    hangsection=true,%
+    hangsubsection=true,%
+    colorize=full,%
+    colortheme=bluemagenta,%
+    bibsys=biber,%
+    bibfile=bib-refs,%
+    bibstyle=alphabetic,%
+    wrapfooter=true,%
+}{cleanthesis}
+\usepackage{cleanthesis}
+
+\hypersetup{% setup the hyperref-package options
+    pdftitle={\thesisTitle},    %   - title (PDF meta)
+    pdfsubject={\thesisSubject},%   - subject (PDF meta)
+    pdfauthor={\thesisName},    %   - author (PDF meta)
+    plainpages=false,           %   -
+    colorlinks=false,           %   - colorize links?
+    pdfborder={0 0 0},          %   -
+    breaklinks=true,            %   - allow line break inside links
+    bookmarksnumbered=true,     %
+    bookmarksopen=true          %
+}
